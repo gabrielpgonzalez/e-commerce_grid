@@ -1,0 +1,98 @@
+body {
+  background-color: gray;
+  color: black;
+  font-family: sans-serif;
+}
+
+/*CSS Para Grid Area */
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "sidebar main main"
+    "footer footer footer";
+}
+
+.nav {
+  grid-area: nav;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  text-align: center;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.side {
+  text-align: center;
+  display: flex;
+  padding: 20px;
+}
+
+/* productos */
+
+.productCard {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.productCard img {
+  width: 400px;
+  height: auto;
+  object-fit: fill;
+  min-height: 400px;
+}
+.productCard p {
+  margin-top: 0px;
+  color: #000000;
+}
+.productCard h2 {
+  color: #000000;
+  font-weight: bolder;
+  text-align: center;
+}
+.btn {
+  background-color: #450095;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+/* MAIN */
+
+.main {
+  grid-area: main;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.items {
+  gap: 1.5rem;
+  margin: 2rem;
+  max-width: 50%;
+  min-width: 400px;
+}
+
+/* Footer */
+.footer {
+  grid-area: footer;
+  background-color: rgb(12, 12, 12);
+  color: #fff;
+  text-align: center;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
